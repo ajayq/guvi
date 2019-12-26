@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>guvi sign up  form</title>
+        <link  rel="stylesheet" href="stylesheet1.css">
+      <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script>
+          function uservalidation(){
+              let username=document.getElementById("username").value;
+              let password=document.getElementById("password").value;
+              for(let j=0;j<username.length;j++)
+                  {
+                      for(i=33;i<48;i++)
+                      if(charAtcode(username[j])===i)
+                      {
+                          alert("no other special character rather than '@' ");
+                      }
+                  }
+              for(let i=0; i<username.length;i++)
+              {
+                 
+                  if(username[i]=='@'||username[i]=='.')
+                  count=count+1;
+              }
+
+          }
+      </script>
+
+    </head>
+<body>
+        <div class="bg"></div>
+            <div class="formbox">  
+            <img src="C:\Users\Ajay\Downloads\guvi.png">
+         
+        <form id="signup">
+            <p>NAME:</p><input type="text" placeholder="enter your name "><br><br>
+            <p>USERNAME</p><input type="text" placeholder="email or phno:"id="username">
+            <p>DOB:</p><input type="date" placeholder="dateofbirth"name="dateofbirth"><br><br>
+            <p>COURSE</p><select><option>JAVA</option><option>PYTHON</option><option>JAVASCRIPT</option></select><br><br>
+            <p>GRADUATION</p><input type="text" placeholder="yourgraduation"><br><br>
+            <p>COLLEGE</p><input type="text"placeholder="enter your college name"><br><br>
+            <p>PASSWORD<input id="password" type="password" placeholder="enter your password"></p>
+            <input type="button" onclick="uservalidation();" placeholder="sign up" value="sign up">
+          
+        </form>
+    
+    
+    </div>
+
+    <img id="cartoon" src="C:\Users\Ajay\Downloads\cartoon.jpg">
+</div>
+</body>
+   
+</html>

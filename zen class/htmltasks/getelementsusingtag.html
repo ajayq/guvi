@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="divbook.js"></script>
+    <title>DiV</title>
+    <style>
+        #first{
+    background: white;;
+    color:red;
+    margin-left: 25%;
+    width: 50%;
+    height: 250px;
+    border-style: solid;
+    border-color: darkblue;
+    }
+        .new
+        {
+     background:transparent;
+    color:greenyellow;
+    margin-left: 25%;
+    width: 50%;
+    height: 250px;
+    
+    border-style: solid;
+    border-color:lime;
+    }
+    a{
+        border: 2px;
+        border-style: solid;
+        border-color: darkblue;
+    }
+    body{
+        background-image: url("3.jpeg");
+        background-size: 100%;
+
+    }
+    input,button,a{
+        font-size: 20px;
+        font-style:oblique;
+        color:white;
+        background: transparent;
+
+    }
+
+    </style>
+
+</head>
+<body >
+    <div id="style"></div>
+    <!--modify the element-->
+   <a>has to changed:</a><input id="hastobechanged" type="text"><a>-----</a>
+       <a>replacement:</a><input id="containername" type="text">
+              <button onclick="change();">click to change</button><a>----</a>
+    <!--add an element-->
+   <a> add item:</a><input id ="additem" type="text" required>
+    <button onclick="adddiv();">add a new div</button>
+
+</body>
+</html>

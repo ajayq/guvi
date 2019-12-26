@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>email validation</title>
+    <script type="text/javascript">
+    function passwordvalidation(password){
+    for(i=0;i<password.length;i++)
+    {
+    }
+    }
+    function emailpasswd(){
+    var count=0;    
+    var email=document.getElementById("email").value;
+    var password=document.getElementById("password").value;
+    if(password.length<8)
+    alert("password is too short");
+    for(i=0;i<email.length;i++){
+        if(email[i]==='@'||email[i]==='.')
+        count=count+1;
+
+    }
+    if(password.length>8 &&count===2)
+    alert("successfully login");
+    else
+    alert("invalid credentials");  
+
+    }
+    
+    
+    </script>
+</head>
+<body>
+    <b>user-email: </b><input id="email" type="text" placeholder="enter your email" >
+    <b>password</b><input id="password"type="password" placeholder="enter your password">
+    <button id="button1" onclick="emailpasswd();">clickhere</button>
+</body>
+</html>
